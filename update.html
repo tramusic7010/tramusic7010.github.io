@@ -7,16 +7,7 @@
 		<title>Update | Tramusic Station</title>
 	</head>
 	<body>
-<!--ヘッダー--!>
-		<header>
-			<div id="update_date">
-				<h1>
-					<a href="index.html">
-						<img src="image/icon.png" alt="Tramusic Station" width="512px" height="64px">
-					</a>
-				</h1>
-			</div>
-		</header>
+		<header id="header"></header>
 		<div id="wrapper">
 			<main>
 				<h2>
@@ -48,32 +39,16 @@
 					</tr>
 				</table>
 			</main>
-<!-- サイドバー --!>
-			<aside>
-				<div id="wrapper_menu">
-					<ul class="nav">
-						<li><a href="index.html">ホーム<span>Home</span></a></li>
-						<li><a href="profile.html">プロフィール<span>Profile</span></a></li>
-						<li><a href="bve.html">Bveデータ<span>Bve Data</span></a></li>
-						<li><a href="lcd.html">トレインビジョン<span>Train Vision</span></a></li>
-						<li><a href="update.html">更新情報<span>Update</span></a></li>
-						<li><a href="extra.html">その他<span>Extra</span></a></li>
-					</ul>
-				</div>
-				<p id="nav_text">外部リンク</p>
-				<div id="wrapper_menu">
-					<ul class="nav">
-						<li><a href="https://x.com/JR701_0" target="_blank" rel="noopener noreferrer">X(Twitter)<span>X(Twitter)</span></a></li>
-						<li><a href="https://www.youtube.com/@StationSound" target="_blank" rel="noopener noreferrer">YouTube<span>YouTube</span></a></li>
-						<li><a href="https://www.nicovideo.jp/user/82372228" target="_blank" rel="noopener noreferrer">ニコニコ動画<span>Niconico</span></a></li>
-						<li><a href="https://www.pixiv.net/users/42087261" target="_blank" rel="noopener noreferrer">Pixiv<span>Pixiv</span></a></li>
-					</ul>
-				</div>
-			</aside>
+			<nav id="sidemenu"></nav>
 		</div>
-		<footer>
-			<p>Since 2019</p>
-			<p>Copyright © 2019-2024 Tramusic All Rights Reserved.</p>
-		</footer>
+		<footer id="footer"></footer>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script type="text/javascript">
+        $(document).ready(function() {
+           $('#header').load('include/header.html');
+		   $('#sidemenu').load('include/nav.html');
+		   $('#footer').load('include/footer.html');
+        });
+		</script>
 	</body>
 </html>
