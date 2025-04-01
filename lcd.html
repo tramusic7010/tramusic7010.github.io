@@ -2,14 +2,16 @@
 <html lang="ja">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" href="image/favicon.ico">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="script/main.css">
 		<title>Train Vision | Tramusic Station</title>
 	</head>
 	<body>
-<!--ヘッダー--!>
+<!--header--!>
 		<header id="header"></header>
 		<div id="wrapper">
+<!--main--!>
 			<main>
 				<h2>
 					トレインビジョン
@@ -27,17 +29,13 @@
 				<p>現在β版を公開中です。(必ずReadMeをお読みください。)</p>
 				<a href="https://drive.google.com/file/d/152Zj42b4HWCDlj1aRi4LMSB4hJdMAGnW/view?usp=sharing" target="_blank" rel="noopener noreferrer">ダウンロード(Google Drive)</a>
 			</main>
-<!-- サイドバー --!>
+<!--sidemenu--!>
 			<nav id="sidemenu"></nav>
 		</div>
+<!--footer--!>
 		<footer id="footer"></footer>
+<!--include--!>
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-		<script type="text/javascript">
-        $(function() {
-           $('#header').load('include/header.html');
-		   $('#sidemenu').load('include/nav.html');
-		   $('#footer').load('include/footer.html');
-        });
-		</script>
+		<script src="script/index.js"></script>
 	</body>
 </html>
