@@ -1,9 +1,14 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+/*@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+
 body{
 	background-color:#ffffff;
 	color : #000000;
 	margin: 8px;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Google Sans Flex','Noto Sans JP', sans-serif;
 	font-size:16px;
 	-webkit-text-size-adjust: 100%;
 }
@@ -228,8 +233,10 @@ div#logo_menu div{
 
 
 div#logo_menu p{
-	margin: -10px 0px 0px 0px;
+	margin: -4px 0px -14px 0px;
 }
+
+
 /*最終更新などのテキスト*/
 div#header_text{
 	text-align: center;
